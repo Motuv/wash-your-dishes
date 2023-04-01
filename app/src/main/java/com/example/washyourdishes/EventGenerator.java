@@ -14,10 +14,11 @@ public class EventGenerator {
         Random random = new Random();
 
         List<Event> Events = new ArrayList<>();
-        Event e = new Event(random.nextInt(4000),new Date(),new User(random.nextInt(4000),"Pieter"), random.nextInt(400));
-        for(int i=0;i<10;i++)
-            Events.add(e);
 
+        for(int i=0;i<3;i++) {
+            Event e = new Event(random.nextInt(4000), new Date(), Globals.users.get(i), random.nextInt(400));
+            Events.add(e);
+        }
         return Events;
     }
 
