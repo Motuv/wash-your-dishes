@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Wash Your Dishes.iml" filepath="$PROJECT_DIR$/.idea/Wash Your Dishes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Wash_Your_Dishes.iml" filepath="$PROJECT_DIR$/.idea/modules/Wash_Your_Dishes.iml" group="Wash_Your_Dishes" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Wash Your Dishes/app" />
     </modules>
   </component>
 </project>
