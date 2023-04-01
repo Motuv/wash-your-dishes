@@ -16,7 +16,7 @@ public class EventGenerator {
         List<Event> Events = new ArrayList<>();
 
         for(int i=0;i<3;i++) {
-            Event e = new Event(random.nextInt(4000), new Date(), Globals.users.get(i), random.nextInt(400));
+            Event e = new Event(random.nextInt(4000), new Date(),Globals.users.get(i),Globals.rulesList.get(i));
             Events.add(e);
         }
         return Events;

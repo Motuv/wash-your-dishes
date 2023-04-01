@@ -33,4 +33,8 @@ public class Rule implements Serializable {
     }
 
 
+    @Override
+    public String toString() {
+        return "Activity: " + activity + "  [" + points + "] ";
+    }
 }

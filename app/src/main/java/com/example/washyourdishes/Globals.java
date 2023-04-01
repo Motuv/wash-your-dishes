@@ -20,6 +20,9 @@ public class Globals {
     public static void fillrulesList(){
         rulesList.add(new Rule("Dish", -3));
         rulesList.add(new Rule("Fork", -1));
+        rulesList.add(new Rule("Clean Floor", 5));
+        rulesList.add(new Rule("Take out trash", 3));
+        rulesList.add(new Rule("Clean windows", 8));
         rulesList.add(new Rule("Floor", 5));
     }
 }
