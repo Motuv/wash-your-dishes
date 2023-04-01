@@ -32,7 +32,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
         holder.textView.setText(Integer.toString(event.getIdEvent()));
         holder.dateView.setText(event.getDate().toString());
         //holder.imageView.setImageResource(event.getUser().getPhoto());
-        holder.imageView.setImageResource(R.drawable.piotr);
+        holder.imageView.setImageResource(event.getUser().getPhoto());
 
     }
 
