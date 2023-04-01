@@ -50,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
         Globals.fillUsers();
         Globals.fillrulesList();
+        Globals.fillResources();
     }
 }

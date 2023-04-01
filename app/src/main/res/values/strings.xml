@@ -7,6 +7,8 @@
     <string name="tab5">Profile</string>
     <string name="rule_description">Rule description</string>
     <string name="rule_points">Rule points</string>
+    <string name="resource_name">Resource</string>
+    <string name="resource_status">State</string>
     <string name="submit">Add</string>
     <string name="name">Name</string>
     <string name="role">Role</string>

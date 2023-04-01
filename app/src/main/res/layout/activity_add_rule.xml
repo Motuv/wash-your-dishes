@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context="com.example.myapp.DataEntryActivity">
+    tools:context="com.example.washyourdishes.AddRule">
 
     <TextView
         android:id="@+id/textViewActivity"
