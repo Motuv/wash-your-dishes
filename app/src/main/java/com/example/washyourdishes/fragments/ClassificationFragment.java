@@ -11,10 +11,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.washyourdishes.Globals;
 import com.example.washyourdishes.R;
-import com.example.washyourdishes.objects.User;
-
-import java.util.ArrayList;
 
 
 public class ClassificationFragment extends Fragment {
@@ -24,16 +22,13 @@ public class ClassificationFragment extends Fragment {
         Context context = this.getContext();
         View view = inflater.inflate(R.layout.fragment_classification, null);
         container = view.findViewById(R.id.classification);
-        ArrayList<User> users = new ArrayList<User>();
-        users.add(new User(1, "Piotr", R.drawable.piotr));
-        users.add(new User(2, "Krzysiek", R.drawable.krzys));
-        users.add(new User(3, "Wojtek", R.drawable.wojtek));
-        users.add(new User(4, "Kuba", R.drawable.kuba));
+
+
         for(int i=0; i<4; i+=1) {
             TableRow tr = new TableRow(context);
             ImageView iv = new ImageView(context);
             iv.setScaleType(ImageView.ScaleType.FIT_XY);
-            iv.setImageResource(users.get(i).getPhoto());
+            iv.setImageResource(Globals.users.get(i).getPhoto());
             iv.setAdjustViewBounds(true);
             iv.setMaxWidth(300);
 
@@ -41,7 +36,7 @@ public class ClassificationFragment extends Fragment {
 
             TextView tv = new TextView(context);
             tv.setTextSize(100);
-            tv.setText(String.valueOf(users.get(i).getPoints()));
+            tv.setText(String.valueOf(Globals.users.get(i).getPoints()));
             tr.addView(tv);
 
             container.addView(tr);

@@ -5,4 +5,9 @@
     <string name="tab3">Resources</string>
     <string name="tab4">Timeline</string>
     <string name="tab5">Profile</string>
+    <string name="submit">Add</string>
+    <string name="name">Name</string>
+    <string name="role">Role</string>
+    <string name="mail">Mail</string>
+    <string name="change">Change</string>
 </resources>
