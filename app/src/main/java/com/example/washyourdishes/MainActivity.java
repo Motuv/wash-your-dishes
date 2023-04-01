@@ -5,8 +5,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.washyourdishes.database.Connection;
 import com.google.android.material.tabs.TabLayout;
+
+import io.realm.Realm;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -14,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager2 viewPager2;
     MyViewPagerAdapter myViewPagerAdapter;
-    Connection conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         myViewPagerAdapter = new MyViewPagerAdapter(this);
         viewPager2.setAdapter(myViewPagerAdapter);
 
-        conn.connect();
-
+        Realm.init(this);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

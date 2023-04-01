@@ -1,4 +1,10 @@
+plugins {
+    id 'com.android.application'
+}
+
 apply plugin: 'com.android.application'
+
+apply plugin: "realm-android"
 
 android {
     compileSdkVersion 33
@@ -24,6 +30,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.example.washyourdishes'
 }
 
 dependencies {
@@ -36,5 +43,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation "androidx.viewpager2:viewpager2:1.0.0"
-    implementation 'org.mongodb:mongodb-driver-sync:4.9.0'
 }
