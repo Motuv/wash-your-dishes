@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ClassificationFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        android:layout_centerInParent="true"
-        android:textSize="32dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/classification">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dip
+    "
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Roommate"
+                android:textSize="15pt"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dip
+    "
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Points"
+                android:textSize="15pt"
+                android:gravity="center"
+                android:padding="5pt"/>
+        </TableRow>
+
+    </TableLayout>
 
 </RelativeLayout>
