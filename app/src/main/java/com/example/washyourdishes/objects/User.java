@@ -5,14 +5,14 @@ public class User {
     String userName;
     int points;
     Role role;
-    String photo;
+    int photo;
     int roomId;
 
-    public User(int id, String userName) {
+    public User(int id, String userName, int photo) {
         this.id =id;
         this.userName = userName;
         this.points = 0;
-        this.photo="";
+        this.photo = photo;
         this.roomId = 1;
         this.role = Role.CASUAL;
     }
@@ -41,11 +41,11 @@ public class User {
         this.role = role;
     }
 
-    public String getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
-    public void setPhoto(String photo) {
+    public void setPhoto(int photo) {
         this.photo = photo;
     }
 
