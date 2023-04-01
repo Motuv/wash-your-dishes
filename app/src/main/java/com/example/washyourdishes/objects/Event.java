@@ -9,14 +9,16 @@ public class Event {
     private Rule rule;
 
     private int idRule;
+    private static int idEventCounter = 1;
 
 
-    public Event(int idEvent, Date date, User user, Rule rule, int idRule) {
-        this.idEvent = idEvent;
+    public Event(Date date, User user, Rule rule, int idRule) {
+        this.idEvent = idEventCounter;
         this.date = date;
         this.user = user;
         this.rule = rule;
         this.idRule = idRule;
+        idEventCounter++;
     }
 
     public Rule getRule() {
