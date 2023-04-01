@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="e.g. 50, 100, 200"
-        android:inputType="number" />
+        android:inputType="numberSigned" />
 
     <Button
         android:id="@+id/buttonSave"
