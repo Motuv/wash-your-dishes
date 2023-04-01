@@ -63,4 +63,5 @@ public class Event {
     public void setIdRule(int idRule) {
         this.idRule = idRule;
     }
-}
+
+    }
