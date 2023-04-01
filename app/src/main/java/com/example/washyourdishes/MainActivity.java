@@ -5,13 +5,16 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.washyourdishes.database.Connection;
 import com.google.android.material.tabs.TabLayout;
+
 
 public class MainActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ViewPager2 viewPager2;
     MyViewPagerAdapter myViewPagerAdapter;
+    Connection conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         viewPager2 =findViewById(R.id.view_pager);
         myViewPagerAdapter = new MyViewPagerAdapter(this);
         viewPager2.setAdapter(myViewPagerAdapter);
+
+        conn.connect();
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
