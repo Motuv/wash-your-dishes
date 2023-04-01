@@ -19,11 +19,7 @@ public class EventGenerator {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         for(int i=0;i<3;i++) {
-<<<<<<< Updated upstream
             Event e = new Event(new Date(),Globals.users.get(i),Globals.rulesList.get(i), Globals.rulesList.get(i).getId());
-=======
-            Event e = new Event(random.nextInt(4000), new Date(),Globals.users.get(i),Globals.rulesList.get(i),0);
->>>>>>> Stashed changes
             Events.add(e);
         }
 

@@ -1,16 +1,22 @@
 package com.example.washyourdishes;
 
+import com.example.washyourdishes.objects.Event;
 import com.example.washyourdishes.objects.Resource;
 import com.example.washyourdishes.objects.Rule;
 import com.example.washyourdishes.objects.User;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Globals {
     public static ArrayList<User> users = new ArrayList<User>();
     public static List<Rule> rulesList = new ArrayList<>();
     public static List<Resource> resourcesList = new ArrayList<>();
+    public static List<Event> eventsList = new ArrayList<>();
+
 
     public static void fillUsers(){
         users.add(new User(1, "Piotr", R.drawable.piotr));
@@ -31,5 +37,13 @@ public class Globals {
     public static void fillResources(){
         resourcesList.add(new Resource("Soap dish", "low"));
         resourcesList.add(new Resource("Paper", "normal"));
+    }
+
+    public static void fillEvents(){
+        Event firstEvent = new Event(new Date(), users.get(0), rulesList.get(0), rulesList.get(0).getId());
+        eventsList.add(firstEvent);
+        Event secondEvent = new Event(new Date(), users.get(1), rulesList.get(1), rulesList.get(0).getId());
+        eventsList.add(secondEvent);
+
     }
 }

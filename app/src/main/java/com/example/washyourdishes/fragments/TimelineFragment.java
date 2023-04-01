@@ -43,10 +43,11 @@ public class TimelineFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_timeline, container, false);
+
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        Button addButton = view.findViewById(R.id.ButtonAddEvent);
 
+        Button addButton = view.findViewById(R.id.ButtonAddEvent);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,8 +72,8 @@ public class TimelineFragment extends Fragment {
 
         if (requestCode == ADD_RULE_REQUEST_CODE && resultCode == RESULT_OK) {
             assert data != null;
-            Rule newRule = (Rule) data.getSerializableExtra("rule");
-            Globals.rulesList.add(newRule);
+            Event newEvent = (Event) data.getSerializableExtra("event");
+            Globals.eventsList.add(newEvent);
             eventAdapter.notifyDataSetChanged();
 
         }

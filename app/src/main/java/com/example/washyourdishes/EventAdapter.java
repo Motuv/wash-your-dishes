@@ -44,7 +44,6 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         TextView dateView;
-
         ImageView imageView;
 
         ViewHolder(View itemView) {

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.washyourdishes.AddEvent">
 
 
-    <ListView
-        android:id="@+id/ListOfRules"
-        android:layout_width="367dp"
-        android:layout_height="656dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="37dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter activity name:"
+        android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
