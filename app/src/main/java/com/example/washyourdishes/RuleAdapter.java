@@ -24,18 +24,16 @@ public class RuleAdapter extends RecyclerView.Adapter<RuleAdapter.RuleViewHolder
     @NonNull
     @Override
     public RuleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // Inflate the row layout
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.fragment_rules, parent, false);
-        // Return a new ViewHolder
+
         return new RuleViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RuleViewHolder holder, int position) {
-        // Get the Rule object at the current position
         Rule rule = rulesList.get(position);
-        // Set the values of the TextViews in the row
+
         holder.activityTextView.setText(rule.getActivity());
         holder.pointsTextView.setText(String.valueOf(rule.getPoints()));
     }

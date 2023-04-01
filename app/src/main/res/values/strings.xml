@@ -5,4 +5,6 @@
     <string name="tab3">Resources</string>
     <string name="tab4">Timeline</string>
     <string name="tab5">Profile</string>
+    <string name="rule_description">Rule description</string>
+    <string name="rule_points">Rule points</string>
 </resources>

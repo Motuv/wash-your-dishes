@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_data_entry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.myapp.DataEntryActivity">
+
+    <TextView
+        android:id="@+id/textViewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter activity name:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextActivity"
+        android:layout_below="@id/textViewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Running, Swimming, Biking"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/textViewPoints"
+        android:layout_below="@id/editTextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter points:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPoints"
+        android:layout_below="@id/textViewPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. 50, 100, 200"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_below="@id/editTextPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Save" />
+
+</RelativeLayout>

@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Rule description"
+        android:text="@string/rule_description"
         android:textSize="22sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -22,7 +22,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="78dp"
-        android:text="Rule points"
+        android:text="@string/rule_points"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -44,6 +44,18 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@android:drawable/ic_menu_delete"
+        android:minWidth="32dp"
+        android:minHeight="32dp" />
+
+    <Button
+        android:id="@+id/addRule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/ic_input_add"
         android:minWidth="32dp"
         android:minHeight="32dp" />
 
