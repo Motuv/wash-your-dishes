@@ -37,7 +37,9 @@ public class ClassificationFragment extends Fragment {
             TextView tv = new TextView(context);
             tv.setTextSize(100);
             tv.setText(String.valueOf(Globals.users.get(i).getPoints()));
+            tv.setX(200);
             tr.addView(tv);
+
 
             container.addView(tr);
         }
