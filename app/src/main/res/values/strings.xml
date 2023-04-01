@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Wash Your Dishes</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab1">Classification</string>
+    <string name="tab2">Rules</string>
+    <string name="tab3">Resources</string>
+    <string name="tab4">Timeline</string>
+    <string name="tab5">Profile</string>
 </resources>
