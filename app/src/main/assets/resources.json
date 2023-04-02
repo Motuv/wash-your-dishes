@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "resource_name": "Dish Soap",
+      "status_of_resource": "AVAILABLE"
+    },
+    {
+      "id": 2,
+      "resource_name": "Sponge",
+      "status_of_resource": "AVAILABLE"
+    },
+    {
+      "id": 3,
+      "resource_name": "Drying Towel",
+      "status_of_resource": "AVAILABLE"
+    }
+  ]
+}

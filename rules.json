@@ -1,0 +1,26 @@
+[
+  {
+    "activity": "Dish",
+    "points": -3
+  },
+  {
+    "activity": "Fork",
+    "points": -1
+  },
+  {
+    "activity": "Clean Floor",
+    "points": 5
+  },
+  {
+    "activity": "Take out trash",
+    "points": 3
+  },
+  {
+    "activity": "Clean windows",
+    "points": 8
+  },
+  {
+    "activity": "Floor",
+    "points": 5
+  }
+]
