@@ -1,7 +1,7 @@
 [  
-    {    "id": 1,    "userName": "Piotr",    "points": 32,    "role": "CASUAL",    "photo": "piotr",    "roomId": 1  },  
+    {    "id": 1,    "userName": "Piotr",    "points": 13,    "role": "CASUAL",    "photo": "piotr",    "roomId": 1  },
     {    "id": 2,    "userName": "Kuba",    "points": 12,    "role": "CASUAL",    "photo": "kuba",    "roomId": 1  },  
-    {    "id": 3,    "userName": "Wojtek",    "points": 1,    "role": "CASUAL",    "photo": "krzys",    "roomId": 1  },  
-    {    "id": 4,    "userName": "Krzysiu",    "points": -7,    "role": "CASUAL",    "photo": "wojtek",    "roomId": 1  }
+    {    "id": 3,    "userName": "Wojtek",    "points": 0,    "role": "CASUAL",    "photo": "krzys",    "roomId": 1  },
+    {    "id": 4,    "userName": "Krzysiu",    "points": -2,    "role": "CASUAL",    "photo": "wojtek",    "roomId": 1  }
 
 ]

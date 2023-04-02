@@ -54,8 +54,8 @@ public class TimelineFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Random random = new Random();
-                int i = random.nextInt(3);
-                int j = random.nextInt(3);
+                int i = random.nextInt(Globals.users.size());
+                int j = random.nextInt(Globals.rulesList.size());
                 Event e = new Event(new Date(), Globals.users.get(i),Globals.rulesList.get(j),j);
                 events.add(0,e);
                 Globals.users.get(i).setPoints(Globals.users.get(i).getPoints()-Globals.rulesList.get(j).getPoints());
