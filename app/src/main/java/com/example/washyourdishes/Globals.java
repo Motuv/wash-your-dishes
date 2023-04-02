@@ -45,6 +45,7 @@ public class Globals {
                 String photoName = jsonObject.getString("photo");
                 int photoId = context.getResources().getIdentifier(photoName, "drawable", context.getPackageName());
                 User user = new User(id, userName, points, photoId); // pass points to User constructor
+
                 users.add(user);
             }
         } catch (IOException | JSONException e) {
