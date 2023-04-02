@@ -8,10 +8,10 @@ public class User {
     int photo;
     int roomId;
 
-    public User(int id, String userName, int photo) {
+    public User(int id, String userName, int points, int photo) {
         this.id =id;
         this.userName = userName;
-        this.points = 0;
+        this.points = points;
         this.photo = photo;
         this.roomId = 1;
         this.role = Role.CASUAL;

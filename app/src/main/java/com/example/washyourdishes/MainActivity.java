@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Globals.fillUsers();
-        Globals.fillrulesList();
-        Globals.fillResources();
+        Globals.fillRules(this);
+        Globals.fillResourceList(this);
+        Globals.fillUserList(this);
     }
 }
