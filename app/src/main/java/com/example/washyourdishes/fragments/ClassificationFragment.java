@@ -13,6 +13,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.washyourdishes.Globals;
 import com.example.washyourdishes.R;
+import com.example.washyourdishes.objects.User;
+
+import java.util.Collections;
+import java.util.Comparator;
 
 
 public class ClassificationFragment extends Fragment {
@@ -25,6 +29,12 @@ public class ClassificationFragment extends Fragment {
 
 
         for(int i=0; i<4; i+=1) {
+            Collections.sort(Globals.users, new Comparator<User>() {
+                @Override
+                public int compare(User user, User t1) {
+                    return -1*(user.getPoints()-t1.getPoints());
+                }
+            });
             TableRow tr = new TableRow(context);
             ImageView iv = new ImageView(context);
             iv.setScaleType(ImageView.ScaleType.FIT_XY);
@@ -39,6 +49,8 @@ public class ClassificationFragment extends Fragment {
             tv.setText(String.valueOf(Globals.users.get(i).getPoints()));
             tv.setX(200);
             tr.addView(tv);
+
+
 
 
             container.addView(tr);

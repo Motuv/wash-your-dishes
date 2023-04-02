@@ -58,6 +58,7 @@ public class TimelineFragment extends Fragment {
                 int j = random.nextInt(3);
                 Event e = new Event(new Date(), Globals.users.get(i),Globals.rulesList.get(j),j);
                 events.add(0,e);
+                Globals.users.get(i).setPoints(Globals.users.get(i).getPoints()-Globals.rulesList.get(j).getPoints());
             eventAdapter.notifyDataSetChanged();
             }
         });
